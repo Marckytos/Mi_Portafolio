@@ -1,0 +1,105 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Cambia la fuente de la pagina a Arial o a cualquier sans-serif si arial no esta disponible*/
+    margin: 0; /*Elimina los margenes exteriores del body para que los elementos inicien desde el borde*/
+    padding: 0; /*Elimina los espacios internos dentro del body*/
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    min-height: 100vh;
+}
+
+header {
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(61,216,235,1) 100%);
+    /*background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+    color: white;
+    padding: 20px; /*Agrega espacio dentro del encabezado para que no se vea apretado*/
+    text-align: center; /*Centra el texto dentro del header*/
+}
+
+nav ul {
+    list-style: none; /*Quita los puntos de la lista ul*/
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /*Hace que los elementos li se muestren en una sola linea en lugar de en columna*/
+    margin: 0 15px; /*Agrega un espacio de 15px a los lados de cada elemento de la lista li*/
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /*Elimina el subrayado de los enlaces*/
+    font-weight: bold; /*Hace que los enlaces sean negritas*/
+}
+
+section {
+    padding: 50px; /*Agrega espacio interno de 50px alrededor del contenido de cada seccion*/
+    text-align: center; /*Centra el texto dentro de las secciones*/
+
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+#sobre-mi {
+    text-align: left;
+} 
+
+#sobre-mi img {
+    width: 250px;
+    float: left;
+    margin-right: 45px;
+}
+
+#sobre-mi h2 {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.05);
+}
+
+#btnSubir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(37,223,149,1) 100%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    border-radius: 50%;
+}
+#btnSubir:hover {
+    background: #555;
+    
+}
+
+
+@media (max-width: 760px) {
+
+}
