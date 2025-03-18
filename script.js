@@ -8,6 +8,7 @@ document.querySelector(this.getAttribute('href'));  //get attribute obtiene el v
     });
 });
 
+
 const btnSubir =
 document.getElementById('btnSubir');  //Busca el boton con id = 'btnSubir' y lo guarda en la variable btnSubir
 
@@ -21,3 +22,19 @@ window.addEventListener('scroll', function () {  //Detecta cuando el usuario hac
 btnSubir.addEventListener('click', function(){  //Cuando se haga clic, el boton ejecutara el codigo dentro
     window.scrollTo({top: 0, behavior: 'smooth'});
 });  //Hace que la pagina se desplace suavemente hacia arriba
+
+
+const botonModoOscuro = 
+document.getElementById("modo-oscuro");
+
+botonModoOscuro.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
+
+const menuToggle = 
+document.getElementById("menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+});
