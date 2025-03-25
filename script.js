@@ -24,12 +24,15 @@ btnSubir.addEventListener('click', function(){  //Cuando se haga clic, el boton 
 });  //Hace que la pagina se desplace suavemente hacia arriba
 
 
-const botonModoOscuro = 
-document.getElementById("modo-oscuro");
+ const botonModoOscuro = 
+ document.getElementById("modo-oscuro");
 
-botonModoOscuro.addEventListener("click", () => {
+ botonModoOscuro.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
-});
+ });
+
+
+
 
 const menuToggle = 
 document.getElementById("menu-toggle");
