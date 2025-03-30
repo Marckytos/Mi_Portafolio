@@ -41,3 +41,13 @@ const navMenu = document.querySelector("nav ul");
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("show");
 });
+
+document.querySelectorAll("nav ul li a").forEach(enlace => {
+    enlace.addEventListener("click", function(e) {
+        e.preventDefault();
+        const destino =
+document.querySelector(this.getAttribute("href"));
+        destino.scrollIntoView({behavior:
+"smooth", block: "start"});        
+    });
+});
